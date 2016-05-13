@@ -112,3 +112,15 @@ Rx.DOM.get("/comments.json").subscribe(
     (data) => console.log(data.response),
     (err) => console.log("Error:", err)
 )
+
+// Making an observable from an array
+Rx.Observable.from(["Sven", "Leif", "Lucy"]).subscribe(
+    x => console.log("Next:", x),
+    err => console.log("Error:", err),
+    () => console.log("Completed")    
+)
+
+let allMoves = Rx.Observable.fromEvent(document, "mousemove");
+allMoves.subscribe((e: MouseEvent) => {
+    console.log(e.clientX, e.clientY);
+});

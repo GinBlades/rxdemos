@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require rxjs/dist/rx.all
 //= require rx-dom/dist/rx.dom
-//= require chapter1
-//= require_tree .
+//= require chapter2

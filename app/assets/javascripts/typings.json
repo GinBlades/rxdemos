@@ -1,7 +1,7 @@
 {
   "ambientDependencies": {
     "jquery": "registry:dt/jquery#1.10.0+20160417213236",
-    "rx": "github:Reactive-Extensions/RxJS/ts/rx.d.ts#12267b74674109dc4e8ed9c72bee659352eeafe3",
+    "rx-all": "github:Reactive-Extensions/RxJS/ts/rx.all.d.ts#12267b74674109dc4e8ed9c72bee659352eeafe3",
     "rx-dom": "github:GinBlades/fake-typings/rx-dom.d.ts"
   }
 }
