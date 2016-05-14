@@ -42,3 +42,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bower-rails"
 gem "typescript-rails"
+gem "quiet_assets"

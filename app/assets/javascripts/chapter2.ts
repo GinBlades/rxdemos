@@ -39,7 +39,7 @@ avg.subscribe(x => console.log("Average is: ", x));
 // Canceling Sequences
 let counter = Rx.Observable.interval(1000);
 
-let subscription1 = counter.subscribe(i => console.log("Subscription 1:", i));
+// let subscription1 = counter.subscribe(i => console.log("Subscription 1:", i));
 let subscription2 = counter.subscribe(i => console.log("Subscription 2:", i));
 
 setTimeout(() => {
@@ -73,5 +73,6 @@ let caught = getJSON(arrayOfJSON).catch(
 
 caught.subscribe(
     json => console.log("Parsed JSON:", json),
+    // Error handled in observable, we never reach this error handler.
     err => console.log("Erroneous Error:", err.message)
 )
